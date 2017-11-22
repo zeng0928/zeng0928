@@ -121,6 +121,9 @@
 
 
 
+  <meta property="fb:admins" content="<user_id>" />
+  <meta property="fb:app_id" content="<app_id>" />
+
 
 
 <meta name="description" content="使github pages 服务器搭建博客的好处有：    1.全是静态文件，访问速度快；    2.免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台 没有提供参数，普通输出Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pel">
@@ -174,6 +177,24 @@
 
   <title>我的第一篇博客 | Mr.Zeng's Blog</title>
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '<app_id>',
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/zh_Hans/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 
 
@@ -414,8 +435,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/11/21/我的第一篇博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/11/21/我的第一篇博客/" itemprop="commentCount"></span>
+                  <span class="post-comments-count fb-comments-count" data-href="http://yoursite.com/2017/11/21/我的第一篇博客/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -485,6 +505,24 @@
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+          <div class="social-like">
+            
+
+            
+              <div class="fb_like">
+                <div class="fb-like" data-layout="button_count" data-share="true"></div>
+              </div>
+            
+          </div>
+        
+
+        
+        </div>
       
       
 
@@ -557,11 +595,11 @@ var jiathis_config={
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
+      <div class="fb-comments"
+           data-href="http://yoursite.com/2017/11/21/我的第一篇博客/"
+           data-numposts="10"
+           data-width="100%"
+           data-colorscheme="light">
       </div>
     </div>
 
@@ -826,26 +864,6 @@ var jiathis_config={
 
   
 
-    
-      <script id="dsq-count-scr" src="https://Zeng.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/11/21/我的第一篇博客/';
-          this.page.identifier = '2017/11/21/我的第一篇博客/';
-          this.page.title = '我的第一篇博客';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://Zeng.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -858,6 +876,10 @@ var jiathis_config={
   
 
 
+
+
+
+  
 
 
 

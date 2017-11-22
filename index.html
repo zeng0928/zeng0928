@@ -121,6 +121,9 @@
 
 
 
+  <meta property="fb:admins" content="<user_id>" />
+  <meta property="fb:app_id" content="<app_id>" />
+
 
 
 <meta name="description" content="前段学习">
@@ -170,6 +173,24 @@
 
   <title>Mr.Zeng's Blog</title>
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '<app_id>',
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/zh_Hans/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 
 
@@ -413,8 +434,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/11/22/我的第二篇博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/11/22/我的第二篇博客/" itemprop="commentCount"></span>
+                  <span class="post-comments-count fb-comments-count" data-href="http://yoursite.com/2017/11/22/我的第二篇博客/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -566,8 +586,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/11/21/我的第一篇博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/11/21/我的第一篇博客/" itemprop="commentCount"></span>
+                  <span class="post-comments-count fb-comments-count" data-href="http://yoursite.com/2017/11/21/我的第一篇博客/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -909,14 +928,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://Zeng.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
 
 
 
@@ -929,6 +940,10 @@
   
 
 
+
+
+
+  
 
 
 

@@ -121,6 +121,9 @@
 
 
 
+  <meta property="fb:admins" content="<user_id>" />
+  <meta property="fb:app_id" content="<app_id>" />
+
 
 
 <meta name="description" content="前段学习">
@@ -170,6 +173,24 @@
 
   <title>标签: 生活 | Mr.Zeng's Blog</title>
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '<app_id>',
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/zh_Hans/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 
 
@@ -634,14 +655,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://Zeng.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
 
 
 
@@ -654,6 +667,10 @@
   
 
 
+
+
+
+  
 
 
 
