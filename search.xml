@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[我的第二篇博客]]></title>
+    <url>%2F2017%2F11%2F22%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[博客内容没有]]></content>
+      <categories>
+        <category>我的生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[我的第一篇博客]]></title>
+    <url>%2F2017%2F11%2F21%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[使github pages 服务器搭建博客的好处有： 1.全是静态文件，访问速度快； 2.免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台 没有提供参数，普通输出Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem. 引用书上的句子Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. David LevithanWide Awake 引用 TwitterNEW: DevDocs now comes with syntax highlighting. http://devdocs.io @DevDocstwitter.com/devdocs/status/356095192085962752 引用网络上的文章Every interaction is both precious and an opportunity to delight. Seth GodinWelcome to Island Marketing普通的代码块1alert(&apos;Hello World!&apos;); 指定语言1[rectangle setX: 10 y: 10 width: 20 height: 20]; 附加说明Array.map1array.map(callback[, thisArg]) 附加说明和网址_.compactUnderscore.js12_.compact([0, 1, false, 2, &apos;&apos;, 3]);=&gt; [1, 2, 3] Pull Quotecontent jsFiddle Gist iframe Image Link百度]]></content>
+      <categories>
+        <category>你的生活</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+</search>
