@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[我的第二篇博客]]></title>
-    <url>%2F2017%2F11%2F22%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"><![CDATA[博客内容没有]]></content>
-      <categories>
-        <category>我的生活</category>
-      </categories>
+    <title><![CDATA[HTML代码使用片]]></title>
+    <url>%2F2017%2F11%2F23%2FHTML%E4%BB%A3%E7%A0%81%E4%BD%BF%E7%94%A8%E7%89%87%E6%AE%B5%2F</url>
+    <content type="text"><![CDATA[水平居中 父元素和子元素宽度未知 inline-block + text-align: center123456.parent &#123; text-align: center;&#125;.child &#123; display: inline-block;&#125; 优点：兼容性好缺点：子元素继承了父元素的text-align属性，子元素需设text-align:left table + margin1234.child &#123; display: table; margin : 0 auto;&#125; 优点：只设置子元素的样式 absolute + transfrom12345678.parent &#123; position: relative;&#125;.child&#123; position: absolute; left:50%; transform: translateX(-50%);&#125; 优点：居中元素不会对其他元素产生影响缺点：transform 属性是css3属性，有兼容性问题 flex + justify-content1234.parent &#123; display:flex; justify-content: center;&#125; 优点：只需要设置父元素的样式缺点：兼容性问题 flex + margin1234.parent &#123; display: flex; margin: 0 auto&#125; 垂直居中 父元素和子元素的高度都未知 table-cell + vertical-align1234.parent &#123; display: table-cell; vertical-align: middle;&#125; 优点：兼容性好 absolute + transform12345678.parent &#123; position: relative;&#125;.child &#123; position: absolute; top: 50%; transform: translateY(-50%);&#125; 优点：居中元素不会影响其他元素缺点：存在兼容性问题 flex + align-item1234.parent &#123; display: flex; align-item: center;&#125; 优点：只需设置父元素的样式缺点：兼容性问题 水平垂直居中 父元素和子元素的宽高都未知 inline-block + text-align + table-cell + vertical-align12345678.parent &#123; text-align: center; display: table-cell; vertical-align: middle&#125;.child &#123; display: inline-block&#125; absolute + transform123456789.parent &#123; position: relative&#125;.child &#123; position: absolute; top:50%; left:50%; transform: translate(-50%)&#125; flex + justify-content + align-items12345.parent &#123; display: flex; justify-content: center; align-items: center&#125; 多列布局 定宽-自适应float + margin1234567.left &#123; float: left; width: 100px&#125;.right &#123; margin-left: 120px&#125; float + overflow12345678.left &#123; float: left; width: 100px; margin-right: 20px&#125;.right &#123; overflow: hidden&#125; table123456789101112.parent &#123; display: table width: 100%&#125;.left &#123; display:table-cell width:100px; padding-right:20px&#125;.right &#123; display: table-cell;&#125; flex12345678910.parent &#123; display: flex;&#125;.left &#123; width:100px margin-right:20px&#125;.right &#123; flex:1&#125; 不定宽-自适应float + overflow1234567.left &#123; float:left; margin-right: 20px&#125;.right&#123; overflow:hidden&#125; table12345678910.parent &#123; display: table;&#125;.left,.right &#123; display: table-cell&#125;.left&#123; width: 0.1% padding-right: 20px&#125; flex123456789.parent &#123; display: flex;&#125;.left &#123; margin-right: 20px&#125;.right &#123; flex: 1&#125;]]></content>
       <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[我的第一篇博客]]></title>
-    <url>%2F2017%2F11%2F21%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"><![CDATA[使github pages 服务器搭建博客的好处有： 1.全是静态文件，访问速度快； 2.免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台 没有提供参数，普通输出Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem. 引用书上的句子Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. David LevithanWide Awake 引用 TwitterNEW: DevDocs now comes with syntax highlighting. http://devdocs.io @DevDocstwitter.com/devdocs/status/356095192085962752 引用网络上的文章Every interaction is both precious and an opportunity to delight. Seth GodinWelcome to Island Marketing普通的代码块1alert(&apos;Hello World!&apos;); 指定语言1[rectangle setX: 10 y: 10 width: 20 height: 20]; 附加说明Array.map1array.map(callback[, thisArg]) 附加说明和网址_.compactUnderscore.js12_.compact([0, 1, false, 2, &apos;&apos;, 3]);=&gt; [1, 2, 3] Pull Quotecontent jsFiddle Gist iframe Image Link百度]]></content>
-      <categories>
-        <category>你的生活</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
+        <tag>html</tag>
       </tags>
   </entry>
 </search>
